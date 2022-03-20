@@ -4,52 +4,60 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mass Bookmarklets</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="Bookmarklet_website_css.css">
-    </head>
+        <title>Pyefy's stuff to surf</title>
+        <meta name="description" content="A cool place to find random stuff">
+        <link rel="stylesheet" href="Main.css">
+        <link rel="script" href="main.js">
+        <link rel="icon" type="image/x-icon" href="Pyefylogo.png" />
+    
     <body>
+        <header>
+            
+            
+        </header>
         
-        <h1>MASS BOOKMARKLETS</h1>
-        <h5>Welcome to Pyefy's website of 40+ bookmarklets!</h5>
-        <br>
-        <h4>What are bookmarklets?</h4>
-        <p>Bookmarklets are bookmarks that hold javascript code, and when clicked they run the javascript. They can change, edit, destroy, and do much more to you page once clicked! It's magic! Or javascript...</p>
-        <br>
-        <h4>Why bookmarklets?</h4>
-        <p>Bookmarklets are unblocked until deliberately found out - and they're so old and out dated that barely any admins know about it. They are the stealthy ninja tasks on you bookmark bar. Plus, even if you don't have any restricting admins, they make for some pretty dope bragging rights. ;)</p>
-        
-        <br>
-        <br>
-        <h5><u>[IMPORTANT]</u></h5>
-        <h2><b>How do I add them to my bookmark bar?</b></h2>
-        <h4>To add them to you bookmarkbar, follow 6 simple steps:</h4>
-        <p>1. Copy the given code. (triple-click the code and press ctrl+c)</p>
-        <p>2. Click the star on the right of your search bar, or press ctrl+d</p>
-        <p>3. Click on the "MORE" button</p>
-        <p>4. Paste the code into the "URL" box</p>
-        <p>5. Place it in the desired bookmark folder/location, and click save</p>
-        <p>6. Click on the bookmark and watch the magic happen!</p>
-        
-        <br>
-        <br>
-        <h3>List of bookmarklets: </h3>
+        <main>
+            
+            <div class="boxtea" id="boxtea" style="cursor: pointer;" onclick="gotogithub()">
+                <h1>Pyefy's stash of digital stuff</h1>
+            </div>
 
-        <ul>
-            <li><h4>Cloak</h4></li>
-            <p>desc: Cloak changes the page title to "My Drive - Google Drive" and the favicon (the page icon) into the Google Drive logo. Good to cloak a tab if an admin is watching</p>
-            <p>code:<br>javascript:function gcloak() { var link = document.querySelector("link[rel*='icon']") || document.createElement('link');link.type = 'image/x-icon';link.rel = 'shortcut icon';link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';document.title = "My Drive - Google Drive";console.log(document.title);document.getElementsByTagName(%27head%27)[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);</p>
+            <h3 class="main">Hello and welcome! This site is for people to explore, I'm <br> gald you're now here to do it. </h3>
+            
             <br>
-            <li><h4>Text Editor</h4></li>
-            <p>desc: Gives you the power to edit any tab like a doc!</p>
-            <p>code:<br>javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
-        </ul>
+            <br>
+            
+            <div class="container">
+                
+                <div class="selectbox">
+                    <h1>WASSUP</h1>
+                </div>
+                
+                <div class="selectbox">
+                    <h1>WASSUP</h1>
+                </div>
+                
+                <div class="selectbox">
+                    <h1>WASSUP</h1>
+                </div>
+                
+                <div class="selectbox">
+                    <h1>WASSUP</h1>
+                </div>
+                
+            </div>
+            
+            <script>   
+                function gotogithub() {
+                    window.open("https://github.com/Pyefy?tab=repositories");
+                }
 
-        
-        
+
+            </script>
+        </main>
         
     </body>
-</html>
+
 
 
 <!--
@@ -77,3 +85,6 @@
 wow I'll keep this it looks hella cool <3
 
 -->
+        
+</html>
+
