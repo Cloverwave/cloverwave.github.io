@@ -14148,11 +14148,6 @@ Game.Launch=function()
 			Game.UpdateTicker();
 		}
 		
-		if (Game.T%(Game.fps*2)==0)
-		{
-			var title='Cookie Clicker';
-			if (Game.season=='fools') title='Cookie Baker';
-			document.title=(Game.OnAscend?'Ascending! ':'')+Beautify(Game.cookies)+' '+(Game.cookies==1?'cookie':'cookies')+' - '+title;
 		}
 		if (Game.T%15==0)
 		{
