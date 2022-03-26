@@ -1,4 +1,4 @@
-﻿/*
+/*
 All this code is copyright Orteil, 2013-2020.
 	-with some help, advice and fixes by Nicholas Laux, Debugbro, Opti, and lots of people on reddit, Discord, and the DashNet forums
 	-also includes a bunch of snippets found on stackoverflow.com and others
@@ -14147,8 +14147,13 @@ Game.Launch=function()
 			
 			Game.UpdateTicker();
 		}
-		
-		}
+//		
+//		if (Game.T%(Game.fps*2)==0)
+//		{
+//			var title='Cookie Clicker';
+//			if (Game.season=='fools') title='Cookie Baker';
+//			document.title=(Game.OnAscend?'Ascending! ':'')+Beautify(Game.cookies)+' '+(Game.cookies==1?'cookie':'cookies')+' - '+title;
+//		}
 		if (Game.T%15==0)
 		{
 			//written through the magic of "hope for the best" maths
