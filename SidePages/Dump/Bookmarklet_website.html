@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mass Bookmarklets</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+    </head>
+    
+    <style>
+        
+        
+        li {
+            font-size: 30px;
+        }
+        
+        a {
+            background-color: rgb(160, 200, 200);
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            text-decoration-line: none
+            
+        }
+        
+        yeet {
+            display: flow-root;
+            background-color: grey;
+            color: white;
+            padding: 35px;
+            margin-right: 12%;
+            margin-left: 8%;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+/*            align-content: space-around;*/
+            
+            
+        }
+        
+        /*        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;*/
+        
+        
+    </style>
+    
+    
+    <body>
+        
+        <h1>MASS BOOKMARKLETS</h1>
+        <h5>Welcome to Pyefy's website of 40+ bookmarklets!</h5>
+        <br>
+        <h4>What are bookmarklets?</h4>
+        <p>Bookmarklets are bookmarks that hold javascript code, and when clicked they run the javascript. They can change, edit, destroy, and do much more to you page once clicked! It's magic! Or javascript...</p>
+        <br>
+        <h4>Why bookmarklets?</h4>
+        <p>Bookmarklets are unblocked until deliberately found out - and they're so old and out dated that barely any admins know about it. They are the stealthy ninja tasks on you bookmark bar. Plus, even if you don't have any restricting admins, they make for some pretty dope bragging rights. ;)</p>
+        
+        <br>
+        <br>
+        <h5><u>[IMPORTANT]</u></h5>
+        <h2><b>How do I add them to my bookmark bar?</b></h2>
+        <h4 style="margin-top: -10px;">All you have to do is simply drag and drop the link shown and kapow! There you are</h4>
+        
+        <br>
+        <p> NOTE: Some bookmarklets require internet. It will be explicitely stated if so.</p>
+        <br>
+        <h3>List of bookmarklets: </h3>
+
+        <ul>
+            
+            <yeet>
+                <li><h4>Tab Cloak</h4></li>
+                <p>desc: Cloak changes the page title to "My Drive - Google Drive" and the favicon (the page icon) into the Google Drive logo. Good to cloak a tab's name and logo if an admin is watching and you switch tabs. Drive logo is not used without internet, but webpage name is still functionally changed.</p>
+                <a href='javascript:function gcloak() { var link = document.querySelector("link[rel*=%27icon%27]") || document.createElement(%27link%27);link.type = %27image/x-icon%27;link.rel = %27shortcut icon%27;link.href = %27https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico%27;document.title = "My Drive - Google Drive";console.log(document.title);document.getElementsByTagName(%27head%27)[0].appendChild(link) };gcloak();setInterval(gcloak, 1000);'>Cloak</a>
+            
+            
+            </yeet>
+            
+            
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Text Editor</h4></li>
+              
+            <p>desc: Gives you the power to edit any tab like a doc! Delete images, replace letters, copy, paste, make funny news stories that obiously aren't true and more! The pranks and possibilities are only limited to you. Text Editor Closer just stops the doc-like experience.</p>
+            <a href='javascript:document.body.contentEditable = %27true%27; document.designMode=%27on%27; void 0'>Text Editor</a>
+            <a href='javascript:document.body.contentEditable = %27false%27; document.designMode=%27off%27; void 0'>Text Editor Closer</a> </yeet>
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Html Xray</h4></li>
+            <p>desc: An advanced xray to edit the fundemental html of a tab. All you have to do is click an element on the webpage and it will open up a small box at the bottom of your screen and you will be able to edit the html. Does not work without internet.</p>
+            <a href='javascript:(function () {var script=document.createElement(%27script%27);script.src=%27https://x-ray-goggles.mouse.org/webxray.js%27;script.className=%27webxray%27;script.setAttribute(%27data-lang%27,%27en-US%27);script.setAttribute(%27data-baseuri%27,%27https://x-ray-goggles.mouse.org%27);document.body.appendChild(script);}())
+'>Xray</a> </yeet>
+            
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Font Changer</h4></li>
+            <p>desc: Input a web-safe font and every piece of text on the screen changes to that font! Web-safe fonts are fonts that just about every browser/computer is compatible with. Input an invalid font and all the text will simply go back to what it was originally.</p>
+            <a href='javascript:function font_c(){var f_name=prompt("Enter the name of font! (no caps) \n For list of fonts visit http://goo.gl/I06Lz");document.body.style.fontFamily=f_name;}font_c();
+'>Font Changer</a> </yeet>
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Web Portal</h4></li>
+            <p>desc: Acess and website through a portal that pops up on your screen! Won't show in history. You can open it on any website with bookmarklets allowed, but if you don't want to open <i>any</i> website you can go to "about:blank" and open the portal. Web Portal Closer does what it sounds like - closes the portal. If you want a search engine, use bing instead of google. Bing's url: https://www.bing.com/</p>
+            <a href='javascript:((function()%7Bvar a,b,c;c=prompt("Website Url (with the http[s]://[www.]):", ""),b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 1333px; height: 768px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)
+'>Web Portal</a> 
+                <a href='javascript:var element = document.getElementById("rusic-modal"); element.parentNode.removeChild(element);'>Web Portal Closer</a>
+            </yeet>
+            
+            
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Rocket</h4></li>
+            <p>desc: A rocket appears on your screen and it's your job to use it's bullets to destroy everything on the screen. Different rockets and score available, and even login. Uses internet.</p>
+            <a href='javascript:var KICKASSVERSION=%272.0%27;var s = document.createElement(%27script%27);s.type=%27text/javascript%27;document.body.appendChild(s);s.src=%27//hi.kickassapp.com/kickass.js%27;void(0);
+'>Rocket</a> </yeet>
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Autoclick</h4></li>
+            <p>desc: one of the more popular ones, click anywhere on the screen for autoclick (>100 cps) and click the same place to un-autoclick. (abuse this on cookie clicker :P)</p>
+            <a href='javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement("style");autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains("auto-clicker-target")) {e.target.classList.remove("auto-clicker-target");} else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains("auto-clicker-target")) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener("click", addClicker, 0);
+'>Autoclick</a> </yeet>
+            
+            
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Snake</h4></li>
+            <p>desc: The classic snake game in your webpage! Use arrow keys to control a snake (the white line thingy) and eat as many green points to make your snake grow and gain in points. Don't run into your own body or walls, it ends the game. Play to get a highscore.</p>
+            <a href='javascript:Q=60;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=8;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF";x.innerHTML="<p></p><canvas>";v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext("2d"); onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=15)*(R=Q-2)*R|(u=0),F(f+=Q+1+15*(f/R|0),g)):F(f):0>e?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++ +10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert("Game Over!\nThe game window will now be closed.")):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,40,e,0),S|0):"Press P to play!")):-e?(y=(a[e]=e<Q|e>=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle="hsl("+99*!a[e]+","+2*m+"%,"+50*y+"%)",c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1): p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void F(-1);
+'>Snake</a> </yeet>
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Title Run</h4></li>
+            <p>desc: This one will open up a game in your tab title! There are 3 levels you can beat...... To go to any of the three just press which number level you want to play (1, 2, or 3), click the bookmarklet again, and press "S" </p>
+            <a href='javascript:(function() %7Bconst CHARACTER%3D%7BBOTTOM%3A"▗"%2CTOP%3A"▝"%2COVER%3A"▞"%2CUNDER%3A"▚"%2CCRASH%3A"⭒"%7D%2CBOX%3D%7BBOTTOM%3A"▖"%2CTOP%3A"▘"%7D%2CMISC%3D%7BFLAG_DARK%3A"⚑"%2CFLAG_LIGHT%3A"⚐"%2CPLAY%3A"▸"%2CSTAR_DARK%3A"★"%2CSTAR_LIGHT%3A"⭒"%7D%2CCOLLISION%3D"collision"%2CJUMP_TIMEOUT%3D-1%2CJUMP_LENGTH%3D3%2CDELAY_LOOP%3D210%2CDELAY_INITIAL%3D1e3%2CMAPS%3D%7B1%3A"%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80⚑"%2C2%3A"%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80⚑"%2C3%3A"%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80▘%E2%80%80%E2%80%80%E2%80%80▖%E2%80%80%E2%80%80%E2%80%80%E2%80%80%E2%80%80⚑"%7D%2CGAME_URL%3Dnew URL(window.location.href)%2CMAP%3DGAME_URL.searchParams.get("map")in MAPS%3FGAME_URL.searchParams.get("map")%3A1%2CDEBUG%3Dnull!%3D!!GAME_URL.searchParams.get("debug")%3Blet map%3DloadMap(MAP)%2Cjump%3D-1%2Cticks%3D0%2Cplaying%3D!1%2Cwin%3D!0%3Bconst commands%3D%7BArrowUp%3A()%3D>%7Bif(!playing)return commands.s()%3Bjump<%3D-1%26%26(jump%3D3)%7D%2Cs%3Aasync()%3D>%7Bplaying%7C%7C(faviconize(""%2C0)%2CloopGame())%7D%2C" "%3A()%3D>commands.ArrowUp()%2Cr%3Aasync()%3D>%7Bplaying%3D!1%2Cawait dotDotDot("Restarting")%2Clocation.reload()%7D%2Cm%3Aasync()%3D>%7Bplaying%3D!1%2CclearStorage()%2Cawait dotDotDot("Clearing")%2Clocation.reload()%7D%7D%3Basync function loopPreGame()%7Bconst e%3D1%3D%3DMAP%3F"Hit S to play!"%3A"MAP "%2BMAP%3Bfor(faviconize(MISC.PLAY%2C102)%2Cawait sleep(1e3)%3B!playing%3B)render(%60%24%7BMISC.FLAG_DARK%7D %24%7Be%7D%60)%2Cawait sleep(210)%2Crender(%60%24%7BMISC.FLAG_LIGHT%7D %24%7Be%7D%60)%2Cawait sleep(210)%7Dasync function loopGame()%7Bfor(playing%3D!0%3Bplaying%26%26map.length>0%3B)%7Bconst e%3DgetCharacter(jump%2Cmap%5B0%5D)%3Bif(e%3D%3DCOLLISION)%7Bfaviconize(MISC.STAR_LIGHT%2C101)%2Crender(CHARACTER.CRASH%2Cmap%2C"SCORE "%2Bticks)%2Cwin%3D!1%3Bbreak%7Dmap%3Dmap.slice(1%2Cmap.length)%2Crender(e%2Cmap)%2Cticks%2B%2B%2Cjump>-1%26%26jump--%2Cawait sleep(210)%7Dwin%26%26loopWin(ticks)%7Dasync function loopWin(e)%7Bfor(faviconize(MISC.FLAG_LIGHT%2C104)%3Bplaying%3B)document.title%3D"⭒ You win! ⭑ SCORE "%2Be%2Cawait sleep(210)%2Cdocument.title%3D"⭑ You win! ⭒ SCORE "%2Be%2Cawait sleep(210)%7Dfunction loadMap(e)%7Breturn readStorage()%3FreadStorage()%3AMAPS%5Be%5D%7Dfunction getCharacter(e%2Ct)%7Breturn e>0%3Ft%3D%3DBOX.TOP%3FCOLLISION%3At%3D%3DBOX.BOTTOM%3FCHARACTER.OVER%3ACHARACTER.TOP%3At%3D%3DBOX.BOTTOM%3FCOLLISION%3At%3D%3DBOX.TOP%3FCHARACTER.UNDER%3ACHARACTER.BOTTOM%7Dasync function dotDotDot(e)%7Brender(e%2B".")%2Cawait sleep(210)%2Crender(e%2B"..")%2Cawait sleep(210)%2Crender(e%2B"...")%2Cawait sleep(210)%7Dfunction readStorage()%7Btry%7Breturn localStorage.getItem("map")%7Dcatch(e)%7Breturn localStorageError(e)%2C!1%7D%7Dfunction clearStorage()%7Btry%7BlocalStorage.removeItem("map")%7Dcatch(e)%7BlocalStorageError(e)%7D%7Dfunction localStorageError(e)%7Bconsole.log("Maybe somebody is blocking localStorage...")%2Cconsole.error(e)%7Dfunction render(e%2Ct%2Co)%7Breturn t%3Fo%3Fvoid(document.title%3D%60%24%7Be%7D%24%7Bt.slice(0%2C2)%7D %24%7Bo%7D%60)%3Adocument.title%3D%60%24%7Be%7D%24%7Bt%7D%60%3Adocument.title%3De%7Dfunction hasCollision(e%2Ct)%7Breturn e%3D%3DCHARACTER.BOTTOM%26%26t%3D%3DBOX.BOTTOM%7C%7Ce%3D%3DCHARACTER.TOP%26%26t%3D%3DBOX.TOP%7Dfunction faviconize(e%2Ct)%7Bconst o%3Ddocument.createElement("canvas")%3Bo.height%3D128%2Co.width%3D128%3Bconst n%3Do.getContext("2d")%3Bn.lineJoin%3D"round"%2Cn.lineWidth%3D96%2Cn.strokeRect(48%2C48%2C32%2C32)%2Cn.fillRect(48%2C48%2C32%2C32)%2Cn.stroke()%2Cn.fill()%2Cn.fillStyle%3D"white"%2Cn.font%3D"128px serif"%2Cn.textAlign%3D"center"%2Cn.fillText(e%2C64%2Ct)%3Bconst a%3Ddocument.querySelector("link%5Brel*%3D%27icon%27%5D")%7C%7Cdocument.createElement("link")%3Ba.rel%3D"icon"%2Ca.href%3Do.toDataURL()%2Cdocument.getElementsByTagName("head")%5B0%5D.appendChild(a)%7Dfunction log()%7BDEBUG%26%26console.log(...arguments)%7Dasync function sleep(e)%7Breturn new Promise(t%3D>setTimeout(t%2Ce))%7Ddocument.addEventListener("keydown"%2Ce%3D>%7Bif(!e.isComposing%26%26229!%3D%3De.keyCode)return log(e.key)%2Ce.key in commands%3F(e.preventDefault()%2Ccommands%5Be.key%5D())%3Ae.key in MAPS%3F(e.preventDefault()%2Clocation.href%3D%60%24%7Blocation.origin%7D%24%7Blocation.pathname%7D%3Fmap%3D%24%7Be.key%7D%60)%3Avoid 0%7D)%2CloopPreGame()%3B%7D())%3B
+'>Title Run</a> </yeet>
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Image Breakout</h4></li>
+            <p>desc: Play the classic atari game <i>Breakout</i> with all the images on a webpage! Using all four walls of a webpage, eliminate all the images with a flying bouncy ball to win! Does use internet.</p>
+            <a href='javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded. Check your connection, just to make sure.")};js.src="https://cdn.jsdelivr.net/gh/orangespaceman/browser-breakout@master/browser-breakout.js"})();
+'>Breakout</a> </yeet>
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Snow</h4></li>
+            <p>desc: weather (pun) it's winter or not, click this bookmarklet and small flecks of snow will fall from the top of your screen! To be honest though, aquiring this one is more for bragging rights and glitter, less of use or fun.</p>
+            <a href='javascript: (t => {function i() {this.D = function() {const t = h.atan(this.i / this.d);l.save(), l.translate(this.b, this.a), l.rotate(-t), l.scale(this.e, this.e * h.max(1, h.pow(this.j, .7) / 15)), l.drawImage(m, -v / 2, -v / 2), l.restore()}}window;const h = Math,r = h.random,a = document,o = Date.now;e = (t => {l.clearRect(0, 0, _, f), l.fill(), requestAnimationFrame(e);const i = .001 * y.et;y.r();const s = L.et * g;for (var n = 0; n < C.length; ++n) {const t = C[n];t.i = h.sin(s + t.g) * t.h, t.j = h.sqrt(t.i * t.i + t.f), t.a += t.d * i, t.b += t.i * i, t.a > w && (t.a = -u), t.b > b && (t.b = -u), t.b < -u && (t.b = b), t.D()}}), s = (t => {for (var e = 0; e < p; ++e) C[e].a = r() * (f + u), C[e].b = r() * _}), n = (t => {c.width = _ = innerWidth, c.height = f = innerHeight, w = f + u, b = _ + u, s()});class d {constructor(t, e = !0) {this._ts = o(), this._p = !0, this._pa = o(), this.d = t, e && this.s()}get et() {return this.ip ? this._pa - this._ts : o() - this._ts}get rt() {return h.max(0, this.d - this.et)}get ip() {return this._p}get ic() {return this.et >= this.d}s() {return this._ts = o() - this.et, this._p = !1, this}r() {return this._pa = this._ts = o(), this}p() {return this._p = !0, this._pa = o(), this}st() {return this._p = !0, this}}const c = a.createElement("canvas");H = c.style, H.position = "fixed", H.left = 0, H.top = 0, H.width = "100vw", H.height = "100vh", H.zIndex = "100000", H.pointerEvents = "none", a.body.insertBefore(c, a.body.children[0]);const l = c.getContext("2d"),p = 300,g = 5e-4,u = 20;let _ = c.width = innerWidth,f = c.height = innerHeight,w = f + u,b = _ + u;const v = 15.2,m = a.createElement("canvas"),E = m.getContext("2d"),x = E.createRadialGradient(7.6, 7.6, 0, 7.6, 7.6, 7.6);x.addColorStop(0, "hsla(255,255%,255%,1)"), x.addColorStop(1, "hsla(255,255%,255%,0)"), E.fillStyle = x, E.fillRect(0, 0, v, v);let y = new d(0, !0),C = [],L = new d(0, !0);for (var j = 0; j < p; ++j) {const t = new i;t.a = r() * (f + u), t.b = r() * _, t.c = 1 * (3 * r() + .8), t.d = .1 * h.pow(t.c, 2.5) * 50 * (2 * r() + 1), t.d = t.d < 65 ? 65 : t.d, t.e = t.c / 7.6, t.f = t.d * t.d, t.g = r() * h.PI / 1.3, t.h = 15 * t.c, t.i = 0, t.j = 0, C.push(t)}s(), EL = a.addEventListener, EL("visibilitychange", () => setTimeout(n, 100), !1), EL("resize", n, !1), e()})()
+'>Snow</a> </yeet>
+            
+            
+            <br>
+            <br>
+            
+            <yeet>                 <li><h4>Ultimate Tic Tac Toe</h4></li>
+            <p>desc: play a tic tac toe game from of tic tac toe games: play <i>ultimate tic tac toe.</i> 2 players face off against eachother (for the lonely ones yes you can play by yourelf) and players roatate turns. Each turn, a section of the board with light up and you can place a move anywhere in the highlighted area. Does need internet to function.</p>
+            <a href='javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded.")};js.src="https://rawgit.com/Krazete/bookmarklets/master/tic.js"})();
+'>Ultimate TicTacToe</a> </yeet>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+
+        
+        
+        
+    </body>
+</html>
+
+
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+
+wow I'll keep this it looks hella cool <3
+
+-->
