@@ -1,4 +1,46 @@
 
+body{
+    background-color: rgb(50, 50, 50);
+}
+
+.navbar {
+    
+    margin-top: 10px;
+    background-color: rgb(40, 40, 40);;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;       
+    border-bottom-style: solid;
+    border-bottom-color: rgb(50, 50, 50);
+    border-bottom-width: 3px;
+}
+
+.navli {
+    float: left;    
+}
+
+.nava {
+    font-family: sans-serif;
+    font-size: 90%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: all 400ms 0ms, z-index 0ms 0ms;
+    
+}
+
+.nava:hover {
+    background-color: rgb(150, 200, 150);
+}
+
+
+
+
+/*
+
 .back {
     color: white;
     display: flex;
@@ -33,3 +75,4 @@
     border-bottom-right-radius: 10px;
     
 }
+*/
